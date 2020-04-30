@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/textview4_style"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.yy.dome.ui.activity.my.MyScore">
+    <include layout="@layout/item_alter_data_top"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="90dp">
+        <TextView
+            style="@style/textview1_style"
+            android:layout_marginLeft="10dp"
+            android:text="高考成绩"
+            android:padding="5dp"
+            android:textColor="@color/font_heise"
+            android:textSize="@dimen/siez_dime10"
+            />
+        <TextView
+            style="@style/textview1_style"
+            android:layout_marginLeft="10dp"
+            android:text="输入你的目标高考分数，为你推荐合适的大学"
+            android:padding="5dp"
+            android:textSize="@dimen/siez_dime2"
+            android:textColor="@color/hongse"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="选择科目"
+        />
+
+    <LinearLayout
+        style="@style/textview2_style"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+>
+        <TextView
+            android:id="@+id/wlk"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/science"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_green_bg"
+            android:padding="5dp"
+            android:text="理科" />
+        <TextView
+            android:id="@+id/liberal_arts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="文科"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+        <TextView
+            style="@style/textview3_style"
+            android:text="目标分数"
+            android:textColor="@color/shenhui"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/target_score"
+            style="@style/textview4_style"
+            android:hint="请输入高考成绩"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:textSize="14dp"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+        <TextView
+            style="@style/textview3_style"
+            android:text="高考排名"
+            android:textColor="@color/shenhui"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/my_rank"
+            style="@style/textview4_style"
+            android:hint="请输入高考排名"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/determine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:background="@drawable/border_sign_back"
+        />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/answer_bg"
+    android:orientation="vertical">
+    <include layout="@layout/item_alter_data_top"></include>
+
+    <LinearLayout
+        android:id="@+id/answer_ry"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/altr_top_lay"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <com.yy.dome.ui.activity.answer.FancyCoverFlow
+        android:id="@+id/main_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        app:actionDistance="0x7FFFFFFF"
+        app:maxRotation="0"
+        app:scaleDownGravity="0.5"
+        app:unselectedAlpha="0.8"
+        app:unselectedSaturation="1.0"
+        app:unselectedScale="0.55" />
+    </LinearLayout>
+</LinearLayout>

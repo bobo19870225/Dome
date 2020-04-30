@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_background"
+    android:background="@mipmap/two"
+    >
+      <TextView
+          android:id="@+id/tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="10dp"
+          android:textColor="@color/white"
+          android:text="跳过"
+          android:textSize="20sp" />
+
+      <ImageView
+          android:id="@+id/fragment_text"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="95dp"
+          android:gravity="center"
+          android:src="@mipmap/btn"
+          android:textSize="14sp"
+          android:visibility="gone"
+          />
+</RelativeLayout>

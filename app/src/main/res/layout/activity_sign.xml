@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".ui.activity.my.LoginActivity" >
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_below="@+id/sign_text"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <com.yy.dome.widget.ZQRoundOvalImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/headimg" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="AI志愿为贵州40万考生服务"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true" >
+        <include
+            android:id="@+id/input_layout"
+            layout="@layout/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="right"
+            android:text="忘记密码"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mall_font_999999"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/forget_password"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:text="登录"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sign"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_one"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="登录即表示你同意我们的"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1387F5"
+            android:text="用户协议"/>
+    </LinearLayout>
+</RelativeLayout>

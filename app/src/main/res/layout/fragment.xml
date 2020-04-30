@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#EEF4F4"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#EEF4F4"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/corner"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="40dp">
+            <TextView
+                android:id="@+id/lq_zg_score"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:text="录取分数：577"
+                android:layout_marginLeft="5dp"
+                />
+                <TextView
+                    android:id="@+id/lq_zd_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:text="~570"
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/school_enrollratio"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:text="录取概率：61%"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/corner"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_height="120dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/font_heise"
+                    android:text="报考建议:"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="如特别中意该校，建议第一志愿填报，专业一定要填满且服从调剂，结合统计分析数据参考选择专业。"
+                    />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout6"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="进阶数据"
+            android:textColor="@color/font_heise"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/white"
+                android:showDividers="middle"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tabrw"
+                android:gravity="center"
+                android:showDividers="middle"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="年份"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="录取人数"
+                    android:textSize="10sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="波动值"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="最低线差"
+                    android:textSize="10sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_height="35dp"
+
+                    android:gravity="center"
+                    android:text="波动值"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="最低位次"
+                    android:textSize="10sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="滚动值"
+                    android:textSize="10sp"
+                    />
+            </TableRow>
+            </TableLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ry_main1"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="高阶数据"
+                    android:textColor="@color/font_heise"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/highest_xc"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="年份" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="录取系数"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="线差分数"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="位次系数"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/highest_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="2016"
+            />
+
+        <TextView
+            android:id="@+id/lqxs_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="-0.0455"
+            />
+
+        <TextView
+            android:id="@+id/xcfs_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="-0.1765"
+            />
+
+        <TextView
+            android:id="@+id/wcxs_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="0.0843"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/school_average"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="2017"
+            />
+
+        <TextView
+            android:id="@+id/lqxs_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/xcfs_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="0.1807"
+            />
+
+        <TextView
+            android:id="@+id/wcxs_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="-0.0606"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/minimum_score"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2018" />
+        <TextView
+            android:id="@+id/lqxs_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="0.1538"
+            />
+
+        <TextView
+            android:id="@+id/xcfs_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="-0.8444"
+            />
+
+        <TextView
+            android:id="@+id/wcxs_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="0.5661"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

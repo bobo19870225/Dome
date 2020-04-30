@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/textview2_style"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/preference_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:minHeight="40dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:minWidth="45dp"
+            >
+            <ImageView
+                android:id="@+id/my_item_img"
+                style="@style/textview1_style"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/cs_tx"
+               />
+            <TextView
+                android:id="@+id/my_item_title"
+                style="@style/textview1_style"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/siez_dime2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/textview3_style"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+           >
+            <TextView
+                android:id="@+id/my_item_whole"
+                style="@style/textview1_style"
+                android:textSize="@dimen/siez_dime0"
+                />
+
+            <ImageView
+                android:id="@+id/my_item_into"
+                style="@style/textview1_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/arrow_rightss" />
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/checkbox_payment"
+                android:button="@android:color/transparent"
+                android:visibility="gone"
+                android:clickable="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/prference_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e4e4e4"
+        >
+
+    </View>
+
+</LinearLayout>

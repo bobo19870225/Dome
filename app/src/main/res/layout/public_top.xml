@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/textview2_style"
+    >
+    <RelativeLayout
+        android:id="@+id/toolbar_back"
+        style="@style/textview2_style"
+        android:background="@color/white"
+        android:minHeight="42dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/public_top_close"
+            style="@style/textview1_style"
+            android:paddingRight="16dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="11dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            />
+        <TextView
+            android:id="@+id/public_top_title"
+            style="@style/textview2_style"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:textSize="@dimen/siez_dime5"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/public_model_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/TextViewWhileStyle"
+            android:text="完成"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/public_top_right_img"
+            style="@style/textview1_style"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:background="#00000000"
+            />
+        <ImageView
+            android:id="@+id/public_top_right_collection"
+            style="@style/textview1_style"
+            android:layout_toLeftOf="@+id/public_top_right_img"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/list_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="这是标题这是标题这是标题这是标题这是标题
+            这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="14sp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/time_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/time"/>
+
+                <TextView
+                    android:id="@+id/list_view_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:layout_toRightOf="@+id/time_image"
+                    android:text="2019-8-5" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/list_view_cishu"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/browse"
+                    />
+                <TextView
+                    android:id="@+id/list_view_cishu"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:text="123456次"
+                    android:textSize="13sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/list_view_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cs_tx"
+            />
+    </LinearLayout>
+
+</LinearLayout>

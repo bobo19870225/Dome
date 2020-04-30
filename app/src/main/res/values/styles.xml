@@ -1,0 +1,132 @@
+<resources>
+
+    <style name="AppTheme.TransparentStausBar" parent="AppTheme">
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>    <!--是否浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:backgroundDimEnabled">false</item> <!--背景是否模糊显示-->
+    </style>
+
+    <style name="mall_Dialog" parent="android:style/Theme.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextViewWhileStyle" parent="TextViewStyle">
+        <item name="android:textColor">#6c6c6c</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="textview2_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="textview1_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="textview3_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="textview4_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TabStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+
+    <!-- dialog底部弹出菜单动画 -->
+    <style name="bottom_menu_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottom_menu_enter</item>
+        <item name="@android:windowExitAnimation">@anim/bottom_menu_exit</item>
+    </style>
+
+    <!--自定义dialog theme 背景透明 -->
+    <style name="TransparencyDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊，背景透明是这个-->
+    </style>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+
+    </style>
+
+    <style name="TitleText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+</style>
+
+
+    <declare-styleable name="FancyCoverFlow">
+        <!--未选中item的透明度-->
+        <attr name="unselectedAlpha" format="float" />
+        <!--未选中item的饱和度-->
+        <attr name="unselectedSaturation" format="float" />
+        <!--未选中item的大小-->
+        <attr name="unselectedScale" format="float" />
+        <!--未选中item的旋转最大角度-->
+        <attr name="maxRotation" format="integer" />
+        <!--缩放的item的位置-->
+        <attr name="scaleDownGravity" format="float" />
+
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/textview4_style"
+    android:background="#F2F2F2"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"
+        >
+        <LinearLayout
+            android:id="@+id/fanhui_lay"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fanhui_my"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/fanhui" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_toRightOf="@+id/fanhui_lay"
+            android:id="@+id/school_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="清华大学"
+            />
+        <TextView
+            android:id="@+id/top_lift"
+            style="@style/textview1_style"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/top"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/top_right"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/bh" />
+
+                    <TextView
+                        android:id="@+id/school_details_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:text="院校代码"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/time_school" />
+                <TextView
+                    android:id="@+id/school_details_year"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="1"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:textColor="@color/white"
+                    android:text="1952年"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/dw" />
+
+                    <TextView
+                        android:id="@+id/school_details_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="1"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:gravity="center_vertical"
+                        android:text="北京市"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/lb" />
+                    <TextView
+                        android:id="@+id/school_details_type"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="1"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:textColor="@color/white"
+                        android:text="综合类"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/superior"
+                        />
+                    <TextView
+                        android:id="@+id/school_details_company"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:layout_marginLeft="5dp"
+                        android:text="主管单位"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ranking"
+                        />
+                    <TextView
+                        android:id="@+id/school_details_lx_pm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="综合排名:122"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                  />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/school_details_ss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/school_details_is211"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="211"
+                    android:background="@drawable/text_sign_setting_style"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/school_details_is985"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="985"
+                    android:background="@drawable/text_sign_setting_style"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <com.yy.dome.widget.ZQRoundOvalImageView
+                android:id="@+id/school_log"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/cs_tx"
+                />
+
+    </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+    <TextView
+        android:id="@+id/register_school"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border_d"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="报考该校"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+    </FrameLayout>
+</LinearLayout>
+

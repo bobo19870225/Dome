@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yy.dome">
+
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在 6.0 系统上的层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+
+    <application
+        android:name=".api.PubcApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/headimg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/headimg"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainFragment"></activity>
+        <!--首页-->
+        <!--vr地图收费-->
+        <activity android:name=".ui.activity.home.FindSchool">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ui.activity.home.VolunteerActivity"></activity>
+        <activity android:name=".ui.activity.home.MajorActivity"></activity>
+        <activity android:name=".ui.activity.home.VolunteerDetails"></activity>
+        <activity android:name=".ui.activity.school.GoSchoolActivity"></activity>
+        <activity android:name=".ui.activity.school.SchoolDetailsActivity"></activity>
+        <activity android:name=".ui.activity.school.SchoolDetails"></activity>
+        <activity android:name=".ui.activity.home.PolicyActivity"></activity>
+        <activity android:name=".ui.activity.home.ExpertActivity"></activity>
+        <activity android:name=".ui.activity.home.MyEvaluation"></activity>
+        <activity android:name=".ui.activity.school.VolunteerList"></activity>
+        <activity android:name=".ui.activity.school.VRMapActivity"></activity>
+        <!--视频支付-->
+        <activity android:name=".ui.activity.school.adapter.ExpertVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+        </activity>
+        <!--支付-->
+        <activity android:name=".ui.activity.home.VipActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.payment.VRMapPayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".wx.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name=".wxapi.WxActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxbe47586fe177982f"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".wxapi.WXEntryActivity"></activity>
+        <activity android:name=".ui.activity.school.form.FormBatchActivityOne"></activity>
+        <activity android:name=".ui.activity.school.form.FormBatchActivityTwo"></activity>
+
+        <activity android:name=".ui.activity.home.CourseActivity"></activity>
+        <activity android:name=".ui.activity.home.ExpressActivity"></activity>
+        <activity android:name=".ui.activity.home.CS"></activity>
+        <activity android:name=".ui.activity.home.ManualVolunteer"></activity>
+        <activity android:name=".ui.activity.home.HomeVolunteerDetails"></activity>
+        <activity android:name=".ui.activity.details.ArticleDetails"></activity>
+        <activity android:name=".ui.activity.details.PrivacyPolicyActivity"></activity>
+        <activity android:name=".ui.activity.details.DisclaimerActivity"></activity>
+        <activity android:name=".ui.activity.HomeActivity"></activity>
+        <activity android:name=".ui.activity.GuideActivity"></activity>
+        <activity android:name=".ui.activity.school.SchoolExpandableListView"></activity>
+        <activity android:name=".ui.activity.home.video.HomeVideoContentActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!--自我测评-->
+        <activity android:name=".ui.activity.answer.AnswerActivity"></activity>
+        <activity android:name=".ui.activity.answer.AnswerActivitys"></activity>
+        <activity android:name=".ui.activity.answer.OkActivity"></activity>
+        <activity android:name=".ui.activity.answer.AnswerActivityDetails"></activity>
+
+        <!--个人中心-->
+        <activity android:name=".ui.activity.my.HeadPortraitActivity"></activity>
+        <activity android:name=".ui.activity.my.item.ActivityXiuGaiPwd"></activity>
+        <activity android:name=".ui.activity.my.MyHelpActivity"></activity>
+        <activity android:name=".ui.activity.my.MyCommentActivity"></activity>
+        <activity android:name=".ui.activity.my.AboutUsActivity"></activity>
+        <activity android:name=".ui.activity.my.FeedbackActivity"></activity>
+        <activity android:name=".ui.activity.my.CacheActivity"></activity>
+        <activity android:name=".ui.activity.my.SettingActivity"></activity>
+        <activity android:name=".ui.activity.my.MyScore"></activity>
+        <activity android:name=".ui.activity.my.Register"></activity>
+        <activity android:name=".ui.activity.my.LoginActivity"></activity>
+        <activity android:name=".ui.activity.my.item.ActivityAlterName"></activity>
+        <activity android:name=".ui.activity.my.item.ForgetPassword"></activity>
+        <activity android:name=".ui.activity.school.VoluntaryformActivity"></activity>
+        <activity android:name=".ui.activity.school.form.FormBatchActivityThree"></activity>
+    </application>
+
+</manifest>

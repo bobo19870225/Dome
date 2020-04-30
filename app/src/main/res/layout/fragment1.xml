@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/ry_main1"
+        android:layout_below="@+id/layout6"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/text_shu"
+            android:layout_width="5dp"
+            android:background="#2987FF"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_toRightOf="@+id/text_shu"
+            style="@style/textview3_style"
+            android:gravity="center"
+            android:text="录取数据"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_wlk"
+            style="@style/textview3_style"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/text_title"
+            android:gravity="center"
+            android:text="贵州省理科" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tabrw"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="数据"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="2018"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="2017" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="2016"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/school_admission"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="录取人数"
+            />
+
+        <TextView
+            android:id="@+id/luqu_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="65"
+            />
+
+        <TextView
+            android:id="@+id/luqu_year2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="32" />
+
+        <TextView
+            android:id="@+id/luqu_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+
+    <TextView
+        android:id="@+id/view_text"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/school_batch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="批次线"
+            />
+
+        <TextView
+            android:id="@+id/batch_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="655"
+            />
+
+        <TextView
+            android:id="@+id/batch_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="329"
+            />
+
+        <TextView
+            android:id="@+id/batch_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/highest_xc"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最高线差" />
+
+        <TextView
+            android:id="@+id/zgxc_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="65"
+            />
+
+        <TextView
+            android:id="@+id/zgxc_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="32"
+            />
+
+        <TextView
+            android:id="@+id/zgxc_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/highest_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="最高分"
+            />
+
+        <TextView
+            android:id="@+id/zgf_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="65"
+            />
+
+        <TextView
+            android:id="@+id/zgf_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="32"
+            />
+
+        <TextView
+            android:id="@+id/zgf_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/minimum_score"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最低分" />
+        <TextView
+            android:id="@+id/minimum_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="65"
+            />
+
+        <TextView
+            android:id="@+id/minimum_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="32"
+            />
+
+        <TextView
+            android:id="@+id/minimum_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/school_Rl"
+        android:layout_height="2px"
+        android:textColor="@color/mall_font_999999"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/minimum_xc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="最低线差"
+            />
+
+        <TextView
+            android:id="@+id/zdxc_year1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="65"
+            />
+
+        <TextView
+            android:id="@+id/zdxc_year2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="32"
+            />
+
+        <TextView
+            android:id="@+id/zdxc_year3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="699"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

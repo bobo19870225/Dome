@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/textview4_style"
+    >
+
+    <include layout="@layout/item_alter_data_top" />
+    <TextView
+        android:id="@+id/cache_text"
+        style="@style/textview2_style"
+        android:layout_marginTop="55dp"
+        android:text="缓存大小：21MB"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/siez_dime8"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/cache_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_sign_back"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="清除缓存"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        />
+</LinearLayout>

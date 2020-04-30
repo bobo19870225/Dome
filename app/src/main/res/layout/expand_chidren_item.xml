@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="5dp"
+    android:id="@+id/lay"
+    android:layout_margin="10dp"
+    android:background="@drawable/text_sign_setting_style"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/chidren_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/ic_bookmark_24dp"
+             >
+            <TextView
+                android:id="@+id/chidren_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="冲"
+                android:textColor="@color/white" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/chidren_item"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+
+            android:text="20%"
+            android:textColor="@color/font_heise" />
+        <TextView
+            android:id="@+id/chidren_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="10sp"
+            android:text="风险极小"
+            android:textColor="#72E24B" />
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/chidren_school_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="山东科技大学"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/font_heise"
+                    android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/chidren_school_is211"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/border_red"
+                        android:textSize="8dp"
+                        android:text="211"
+                        android:textColor="@color/hongse" />
+
+                    <TextView
+                        android:id="@+id/chidren_school_is985"
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/border_yellow"
+                        android:gravity="center"
+                        android:text="985"
+                        android:textColor="@color/hongse"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="30dp">
+        <TextView
+            android:id="@+id/chidren_school_zsrs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:textSize="11dp"
+            android:gravity="center_vertical"
+            android:text="招生人数:789"
+            />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/chidren_school_Fraction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textSize="11dp"
+                android:text="录取最低分"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/chidren_school_wkl"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="match_parent"
+            android:text="理工类"
+            android:textSize="10sp"
+            android:textColor="@color/b"
+            />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chidren_school_code"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="院校代码：1022"
+            android:textSize="12dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="8dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/hongse" />
+
+            <TextView
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/hongse"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/chidren_school_city"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="所在地:贵阳市"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/chidren_school_admission"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:textSize="11dp"
+            android:textColor="@color/w"
+            android:text="录取最低位次：45123" />
+
+    </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:src="@mipmap/arrow_right"
+            />
+
+
+</LinearLayout>

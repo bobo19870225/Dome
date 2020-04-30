@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:orientation="vertical"
+    android:id="@+id/lv"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/border_listview"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="软件工程"
+        android:gravity="center"
+        android:maxEms="4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/font_heise"
+        android:textSize="@dimen/siez_dime6"
+        />
+
+
+    <TextView
+        android:id="@+id/item_money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="@dimen/siez_dime8"
+        android:textColor="#F96D2A"
+        android:text="￥10000"
+        />
+    <TextView
+        android:id="@+id/item_school_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="毕业后3年月薪"
+        android:textColor="@color/font_heise"
+        android:textSize="11sp" />
+</LinearLayout>

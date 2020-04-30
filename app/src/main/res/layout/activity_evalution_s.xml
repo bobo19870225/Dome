@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/item_alter_data_top"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#E2E6EA"
+        android:layout_height="140dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示"
+            android:textColor="@color/font_heise"
+            android:textSize="@dimen/siez_dime10"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="1.本套测评由90道题目组成，大约需要12分钟完成测试，请保持注意力集中。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="2.选项间无对错好坏之分，请选择你是如何做的，而不是选择你认为哪样更好。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="3.请放松你的心情，选择最接近你平时的行为或感觉选项。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="4.中途退出本次测试已答的内容无效，下次将重新作答。"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/zwwcp_ll2"
+        android:background="@drawable/border_sign_back"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="继续"
+        android:layout_height="45dp" />
+</LinearLayout>

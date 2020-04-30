@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008eff</color>
+    <color name="colorPrimaryDark">#00aafe</color>
+
+    <color name="colorGrayan">#E4E4E4</color>
+    <color name="colorGrayb">#F0F0F0</color>
+    <color name="colorGray">#6c6c6c</color>
+
+    <color name="axis">#979797</color>
+    <color name="font_hongse">#F56C6C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="danhui">#F7F7F7</color>
+    <color name="shenhui">#666666</color>
+    <color name="green">#19AC19</color>
+    <color name="fonts">#CFCFCF</color>
+    <color name="font_heise">#2B2B2B</color>
+    <color name="bg">#F6F6F6</color>
+    <color name="mall_bg_D6D6D6">#D6D6D6</color>
+    <color name="hui">#E4E4E4</color>
+    <color name="mall_font_333333">#333333</color>
+    <color name="mall_font_999999">#999999</color>
+    <color name="mall_bg_7D7D7D">#7D7D7D</color>
+    <color name="mall_bg_1DC97C">#1DC97C</color>
+    <color name="mall_bg_8F8F8F">#8F8F8F</color>
+    <color name="mall_main_font_28cc82">#28cc82</color>
+
+
+    <color name="black">#000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="c">#EF6435</color>
+    <color name="w">#FFC500</color>
+    <color name="b">#72E24B</color>
+    <color name="bg_l">#4977F5</color>
+
+    <!--橙黄色-->
+    <color name="huangse">#FB5402</color>
+    <color name="hongse">#FE3030</color>
+</resources>

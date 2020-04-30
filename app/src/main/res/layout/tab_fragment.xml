@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tab_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeRefrehLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tab_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:id="@+id/scbtab_bottom"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            >
+            <ProgressBar
+                android:id="@+id/item_scbtab_bottom_progress"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/ab"
+                android:indeterminateBehavior="repeat"
+                />
+            <TextView
+                android:id="@+id/item_scbtab_bottom_textcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:text="加载中" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

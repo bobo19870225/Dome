@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"
+        android:paddingLeft="3dp"
+        >
+        <LinearLayout
+            android:id="@+id/fanhui_lay"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fanhui_my"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/fanhui" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/top"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/top_right_name"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#E9E9EA"
+        />
+    <com.yy.dome.widget.CommonEditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="请输入用户名"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:background="@color/white"
+        />
+</LinearLayout>

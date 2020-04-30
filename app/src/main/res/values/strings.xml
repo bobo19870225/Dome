@@ -1,0 +1,242 @@
+<resources>
+    <string name="app_name">AI志愿系统</string>
+    <string name="appId">6833fcc770385060</string>
+    <string name="appKey">yvY85Xw9y8tAQaOqFyU5ST9x9rIw7txH</string>
+    <!--加载中的情况-->
+    <string name="stsc_web_loading">正在加载中...</string>
+    <string name="no_network">网络未连接</string>
+    <string name="no_network_error">请检查网络是否连接</string>
+    <string name="no_network_click_loading">请检查网络后点击加载</string>
+    <string name="error_no_data">数据加载失败</string>
+    <string name="error_request_no_data">数据请求失败</string>
+    <string name="error_load_failed">网络异常,加载失败</string>
+    <string name="phone_number">请输入手机号码</string>
+    <string name="new_password">请输入密码</string>
+
+    <string name="my_edit_data">编辑资料</string>
+    <string name="my_login_data">立即登录</string>
+    <string name="my_common_information">我的评论</string>
+    <string name="my_dwonload">缓存管理</string>
+    <string name="my_about">关于我们</string>
+    <string name="my_wzteter">问政提问</string>
+    <string name="my_cache">缓存管理</string>
+    <string name="my_feedback">意见反馈</string>
+    <string name="my_setting">系统设置</string>
+    <string name="my_score">我的成绩</string>
+    <string name="help_conten">帮助中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="my_login">设置AI志愿昵称</string>
+    <string name="my_collection">我的收藏</string>
+
+    <string name="scb_map_fail">定位失败</string>
+
+
+    <!--加载中的情况-->
+
+    <string name="xlistview_header_hint_normal">刷新数据...</string>
+    <string name="xlistview_header_hint_ready">刷新数据...</string>
+    <string name="xlistview_header_hint_loading">正在努力加载中...</string>
+    <string name="xlistview_header_last_time">最近更新：今天 </string>
+    <string name="cube_ptr_refreshing">正在努力刷新中...</string>
+    <string name="cube_ptr_refresh_complete">加载完成...</string>
+
+    <string name="cube_ptr_last_update">last update:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;seconds ago</string>
+    <string name="cube_ptr_minutes_ago">&#160;minutes ago</string>
+    <string name="cube_ptr_hours_ago">&#160;hours ago</string>
+    <string name="xlistview_footer_hint_normal">加载更多数据</string>
+    <string name="xlistview_footer_hint_ready">加载完毕</string>
+
+    <string name="app_updater_download_later">暂不更新</string>
+    <string name="app_updater_download_now">下载安装</string>
+    <string name="app_updater_app_market">应用市场</string>
+    <string name="app_updater_downloading">正在下载…</string>
+    <string name="app_updater_download_failed">下载失败：%d</string>
+    <string name="app_updater_dir_not_found">找不到下载目录 - %s</string>
+    <string name="app_updater_install">安装</string>
+    <string name="app_updater_retry">重试下载</string>
+
+
+    <string name="lfrecyclerview_header_hint_normal">下拉刷新</string>
+    <string name="lfrecyclerview_header_hint_ready">松开刷新数据</string>
+    <string name="lfrecyclerview_header_hint_loading">正在加载...</string>
+    <string name="lfrecyclerview_header_last_time">上次更新时间：</string>
+    <string name="lfrecyclerview_footer_hint_normal">查看更多</string>
+    <string name="lfrecyclerview_footer_hint_ready">松开载入更多</string>
+    <string name="lfrecyclerview_header_hint_success">刷新成功</string>
+    <string name="lfrecyclerview_header_hint_failt">刷新失败</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <string name="qq_appid">1106582605</string>
+    <string name="scanDialogTitle">条码内容</string>
+
+
+
+
+
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="goto_pay">跳转到支付界面</string>
+    <string name="goto_fav">跳转到收藏界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+    <string name="pay_by_wx_title">通过微信支付</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="errcode_unsupported">不支持错误</string>
+
+    <string name="launch_from_wx">Launch From Weixin</string>
+
+    <!-- WXMediaMessage -->
+    <string name="input_openid">输入openid</string>
+    <string name="input_scope">输入scope</string>
+
+    <string name="send">发送到微信</string>
+    <string name="receive">从微信接收</string>
+
+    <string name="is_timeline">是否分享到朋友圈</string>
+    <string name="send_text">发送文本</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+
+
+
+
+    <string-array name="app_answer">
+
+        <!--1-->
+        <item>强壮而敏捷的身体对我很重要。</item>
+        <item>我必须彻底地了解事情的真相。</item>
+        <item>我的心情受音乐、色彩和美丽事物的影响极大。</item>
+        <item>和他人的关系丰富了我的生命并使它有意义。</item>
+        <item>我自信会成功。</item>
+        <item>我做事必须有清楚的指引。</item>
+        <item>我擅长于自己制作、修理东西。</item>
+        <item>我可以花很长的时间去想通事情的道理。</item>
+        <item>我重视美丽的环境。</item>
+        <item>我愿意花时间帮别人解决个人危机。</item>
+
+        <!--2-->
+        <item>我喜欢竞争。</item>
+        <item>我在开始一个计划前会花很多时间去计划。</item>
+        <item>我喜欢使用双手做事。</item>
+        <item>探索新构思使我满意。</item>
+        <item>我是寻求新方法来发挥我的创造力。</item>
+        <item>我认为能把自己的焦虑和别人分担是很重要的。</item>
+        <item>成为群体中的关键任务执行者，对我很重要。</item>
+        <item>我对于自己能重视工作中的所有细节感到骄傲。</item>
+        <item>我不在乎工作把手弄脏。</item>
+        <item>我认为教育是个发展及磨练脑力的终身学习过程。</item>
+
+        <!--3-->
+        <item>我喜欢非正式的穿着，尝试新颜色和款式。</item>
+        <item>我常能体会到某人想要和他人沟通的需要。</item>
+        <item>我喜欢帮助别人不断改进。</item>
+        <item>我在决策时，通常不愿冒险。</item>
+        <item>我喜欢购买小零件，做成成品。</item>
+        <item>有时我长时间阅读，玩拼图游戏，冥想生命本质。</item>
+        <item>我有很强的想象力。</item>
+        <item>我喜欢帮助别人发挥天赋和才能。</item>
+        <item>我喜欢监督事情直至完工。</item>
+        <item>如果我面对一个新情景，会在事前做充分的准备。</item>
+
+
+        <!--4-->
+        <item>我喜欢独立完成一项任务。</item>
+        <item>我渴望阅读或思考任何可以引发我好奇心的东西。</item>
+        <item>我喜欢尝试创新的概念。</item>
+        <item>如果我和别人摩擦，我会不断尝试化干戈为玉帛。</item>
+        <item>要成功就必须定高目标。</item>
+        <item>我喜欢为重大决策负责。</item>
+        <item>我喜欢直言不讳，不喜欢转弯抹角。</item>
+        <item>我在解决问题前，必须把问题进行彻底分析。</item>
+        <item>我喜欢重新布置我的环境，使他们与众不同。</item>
+        <item>我经常借着和别人交谈来解决自己的问题。</item>
+
+        <!--5-->
+        <item>我常想起草一个计划，而由别人完成细节。</item>
+        <item>准时对我来说非常重要。</item>
+        <item>从事户外活动令我神清气爽。</item>
+        <item>我不断地问：为什么？</item>
+        <item>我喜欢自己的工作能够抒发我的情绪和感觉。</item>
+        <item>我喜欢帮助别人找可以和他人相互关注的办法。</item>
+        <item>能够参与重大决策是件令人兴奋的事情</item>
+        <item>我经常保持清洁,喜欢有条不紊</item>
+        <item>我喜欢周边环境简单而实际。</item>
+        <item>我会不断地思索一个问题，直到找出答案为止。</item>
+
+
+
+
+        <!--6-->
+        <item>大自然的美深深地触动我的灵魂。</item>
+        <item>亲密的人际关系对我很重要。</item>
+        <item>升迁和进步对我极重要。</item>
+        <item>当我把每日工作计划好时，我会较有安全感</item>
+        <item>我不害怕过重工作负荷，且知道工作的重点</item>
+        <item>我喜欢能使我思考、给我新观念的书。</item>
+        <item>我希望能看到艺术表演、戏剧及好的电影。</item>
+        <item>我对别人的情绪低潮相当的敏感。</item>
+        <item>能影响别人使我感到兴奋。</item>
+        <item>当我答应一件事时，我会竭尽监督所有细节。</item>
+
+        <!--7-->
+        <item>我希望粗重的肢体工作不会伤害任何人。</item>
+        <item>我希望能学习所有使我感兴趣的科目。</item>
+        <item>我希望能做些与众不同的事。</item>
+        <item>我对别人的困难乐于伸出援手。</item>
+        <item>我愿意冒一点险以求进步。</item>
+        <item>当我遵循成规时，我感到安全。</item>
+        <item>我选车时，最先注意的是好的引擎。</item>
+        <item>我喜欢能刺激我思考的话。</item>
+        <item>当我从事创造性的事时，我会忘掉一切旧经验。</item>
+        <item>我对社会上有许多人需要帮助感到关注。</item>
+
+
+        <!--8-->
+        <item>说服别人依计划行事是件有趣的事情。</item>
+        <item>我擅长于检查细节。</item>
+        <item>我通常知道如何应付紧急事件。</item>
+        <item>阅读新发现的书是件令人兴奋的事情。</item>
+        <item>我喜欢美丽、不平凡的东西。</item>
+        <item>我经常关心孤独、不友善的人。</item>
+        <item>我喜欢讨价还价。</item>
+        <item>我花钱时小心翼翼。</item>
+        <item>我用运动来维持强壮的身体。</item>
+        <item>我经常对大自然的奥秘感到好奇。</item>
+
+
+        <!--9-->
+        <item>尝试不平凡的新事物是件相当有趣的事情。</item>
+        <item>当别人像我诉说他的困难时，我是个好听众。</item>
+        <item>做事失败了，我会再接再厉。</item>
+        <item>我需要确切地知道别人对我的要求是什么。</item>
+        <item>我喜欢把东西拆开，看看能否修理他们。</item>
+        <item>我喜欢研读所有的事实，再有逻辑的做出决定。</item>
+        <item>没有美丽事物的生活，对我而言是不可思议的。</item>
+        <item>人们经常告诉我他们的问题。</item>
+        <item>我常能借着资讯网络和别人取得联系。</item>
+        <item>小心谨慎的完成一件事是件有成就感的事情</item>
+
+    </string-array>
+
+
+    <drawable name="color1">#979797</drawable>
+
+    <drawable name="color2">#FFFFFF</drawable>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+</resources>

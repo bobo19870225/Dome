@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:id="@+id/ry_ela1"
+        android:layout_below="@+id/top_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"
+        >
+        <ImageView
+            android:id="@+id/fanhui_my"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/fanhui" />
+        <TextView
+            android:id="@+id/top"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/top_right"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10sp"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/ry_ela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.yy.dome.tool.ScaleImageView
+        android:layout_below="@+id/ry_ela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/zwcp"
+
+        />
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F1F8"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/zwwcp_ll2"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:layout_margin="10dp"
+            android:text="开始测试"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/see"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/zwwcp_ll2"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="查看测评"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>

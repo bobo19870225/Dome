@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" forua="true" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>环状统计</title>
+<script language="javascript" type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script language="javascript" type="text/javascript" src="raphael.js"></script>
+<script language="javascript" type="text/javascript" src="config.js"></script>
+    <script language="javascript" type="text/javascript" src="getUrlParam.js"></script>
+<script language="javascript" type="text/javascript" src="cloud.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+  html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+#topD{background-color:#487AF5;}
+#topD {
+    height:100%;
+    background-color: red; /* 不支持线性的时候显示 */
+     background-image: linear-gradient(to right,#4A6BF6,#48B6F3);
+     margin: 0 auto; /*水平居中*/
+            position: relative;
+           
+}
+.uscore{margin-top:-25px;}
+.score{font-size:40px;}
+.centerData span:nth-child(1){font-size:15px;}
+.centerData span{margin:0;}
+
+
+#mainBody {width:100%;height:100%;position:absolute;z-index:9999;}
+.cloud {position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(cloud.png) no-repeat;z-index:1;opacity:0.5;}
+#cloud2 {z-index:9999;}
+</style>
+<script>
+var url=UrlParam.paramValues("url");
+var phone=UrlParam.paramValues("phone");
+var token=UrlParam.paramValues("token");
+
+
+$(function(){
+ //$("body").html("url:"+UrlParam.paramValues("url")+"</br>phone:"+UrlParam.paramValues("phone")+"</br>"+UrlParam.paramValues("token"));
+ $("#topD").height($(window).height());
+
+
+ $.post(url+"method=getStudent&phone="+phone+"&token="+token,function(v){
+ initStyles(parseInt(v.score)*100/750);
+ $(".area").html(v.areaName+","+v.wlkName);
+ $(".score").html(v.score);
+ });
+});
+function initStyles(s) {
+ // 设置环状统计报表
+ var viewWidth = $(window).width();  //屏幕宽度
+ var diameter = viewWidth*0.5;       // 图标宽度
+ var high = diameter*0.8;            // 图标高度
+ var radius1 = high/2;               // 外环半径
+ var radius2 = radius1-4;           // 内环半径
+ var cx = diameter/2;                // x轴坐标
+ var cy = high*0.55;                 // y轴坐标
+
+ dial(s,diameter,high,cx,cy,radius1,radius2,"flow_chartCvs","gradient");  // 第一个数值即为百分比数值
+}
+
+function appOpen(url){
+
+  var obj={'url':url};
+  try{
+  window.WebViewJavascriptBridge.callHandler(
+  'scoreWeb'
+  , obj
+  , function(responseData) {
+
+  });
+  }catch{
+   window.webkit.messageHandlers.scoreWeb.postMessage(obj);  }
+         
+      }
+ 
+ 
+    
+   
+</script>
+</head>
+<body>
+
+
+
+    <div class="wrap pos-rel" id="topD">
+          <div id="mainBody">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div>
+            <div class="w-50 pull-left">
+             
+                    <div class="flow_chartPie">
+                        <div id="flow_chartCvs"></div>
+                        <div class="flow_chartShade">
+                            <div class="centerData text-center">
+                                <span class="dis-block ft-10 ft-white area">贵州省，理科</span>
+                                <span class="dis-block mrgt-10 ft-12 ft-white score">460</span>
+                            </div>
+                        
+                        </div>
+<!--                            <div class="dis-block text-center uscore" style="position:relative ;z-index:999999;" onclick="appOpen('');">
+                            <a class="flow_btn">修改分数</a>
+                        </div>-->
+                    </div>
+             
+            </div>
+         
+    </div>
+     
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/picture_dialog_relative_layout"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/picture_dialog_take_photo_linear_layout"
+        android:orientation="vertical"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/comment_camera" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="摄像头"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/picture_dialog_album_linear_layout"
+        android:orientation="vertical"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/comment_album" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="相册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

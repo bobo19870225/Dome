@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D8E7FA"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="1/90"
+                        android:textColor="@color/font_heise"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="120dp"
+                        android:padding="10dp"
+                        android:text="1.强壮而敏捷的身体对我很重要"
+                        android:textColor="@color/font_heise"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/back_white_line_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="完全符合"
+                        android:textColor="@color/font_heise" />
+
+                    <Button
+                        android:id="@+id/tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_white_line_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="比较符合"
+                        android:textColor="@color/font_heise" />
+
+
+
+                    <Button
+                        android:id="@+id/tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_white_line_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="不太符合"
+                        android:textColor="@color/font_heise" />
+
+                    <Button
+                        android:id="@+id/tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/back_white_line_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="完全不符合"
+                        android:textColor="@color/font_heise" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="上一题 >>"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</RelativeLayout>

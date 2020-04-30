@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:background="#1364E9"/>
+    <RelativeLayout
+        android:layout_below="@+id/fake_status_bar"
+        android:id="@+id/ry_ela1"
+        android:layout_width="match_parent"
+        android:background="#1364E9"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/top"
+            style="@style/textview1_style"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/ry_ela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yy.dome.tool.ScaleImageView
+                android:layout_below="@+id/ry_ela1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zwcp"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F1F8"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/zwwcp_ll2"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:layout_margin="10dp"
+            android:text="开始测试"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/see"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/zwwcp_ll2"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="查看测评"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>

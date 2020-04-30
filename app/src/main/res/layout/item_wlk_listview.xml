@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent1"
+    style="@style/textview2_style"
+    >
+
+    <LinearLayout
+        android:id="@+id/popup"
+        style="@style/textview2_style"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/popup_quxiao"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:text="取消"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="选择文理科"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/popup_determine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/popup"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|right"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#585858"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textSize="18sp"
+                android:text="全部"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/popup_li"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#585858"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textSize="18sp"
+                android:text="理科"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/popup_wen"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="文科"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

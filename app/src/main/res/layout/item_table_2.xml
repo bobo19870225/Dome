@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/table_year1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="年份"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_lqxs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="录取系数"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_xcfs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="线差分数"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/table_wcxs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="位次系数"
+        android:textSize="14sp" />
+
+
+
+
+
+</LinearLayout>

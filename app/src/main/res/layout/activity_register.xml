@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/textview4_style"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_fanhui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+           android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/siez_dime10"
+            android:textColor="@color/white"
+            android:text="注册"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_below="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/input_layout"
+            layout="@layout/register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sign_btn"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/border_sign_back"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lift_text"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sign_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_one"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/danhui"
+        />
+    </LinearLayout>
+</LinearLayout>
